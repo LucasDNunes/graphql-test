@@ -1,0 +1,27 @@
+#type Employee {
+#    id: ID!
+#    name: String!
+#    age: Int!
+#    position: String!
+#    salary: Int!
+#}
+#
+#schema {
+#    query: EmployeeQueries
+#    mutation: EmployeeMutations
+#}
+#type EmployeeQueries {
+#    employees: [Employee]
+#    employee(id: ID!): Employee!
+#}
+#type EmployeeMutations {
+#    newEmployee(employee: EmployeeInput!): Employee
+#    deleteEmployee(id: ID!) : Boolean
+#    updateEmployee(id: ID!): Employee
+#}
+#input EmployeeInput {
+#    name: String
+#    age: Int
+#    position: String
+#    salary: Int
+#}
