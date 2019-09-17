@@ -50,6 +50,7 @@ type EmployeeMutations {
   updateEmployee(id: ID!): Employee
 }
 input EmployeeInput {
+  id: ID
   name: String
   age: Int
   position: String
